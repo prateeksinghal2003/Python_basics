@@ -1,3 +1,8 @@
+# to push changes in GitHub
+""" git add filename
+    git commit -m "some text"
+    git push python_basics_repo main """
+
 #----------------Python Basics
 #interpreted language
 #Case sensitive
@@ -139,7 +144,6 @@ print("Street "+str(17))
 # group_id = "Group1"
 #
 # print(f"{user_id} joined group {group_id}")
-#
 # Output:
 #
 # Alice joined group Group1
