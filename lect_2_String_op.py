@@ -49,9 +49,9 @@ print("prateek".capitalize())
 #----------Conditional Statements
 age=18
 
-if(age>=18):
+if age>=18:
     print("Adult")
-elif(age>12 and age<18):
+elif age>12 and age<18 :
     print("Teen")
 
 else:
