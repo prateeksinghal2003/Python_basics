@@ -17,6 +17,8 @@ print("all good")
 
 print(23)
 print(23+56)
+
+# converts the number 23 (integer) into a string "23"
 print(str(23))
 
 #creating variables
