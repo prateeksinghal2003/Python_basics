@@ -24,6 +24,9 @@ print(word[3])
 
 print("Prateek"[0:2])
 
+name ="karan"
+print("Slicing using variable name :",name[0:2])
+
 #go till last
 print("Prateek"[2:])
 
@@ -35,7 +38,7 @@ print("Prateek"[-4:-1])
 
 
 #-----------------String functions
-#See pdf
+#See PDF
 
 print("Prateek".replace("e","i"))
 print("Prateek".find("e"))
