@@ -25,7 +25,9 @@ print(str(23))
 name='Alice'
 name2="Alex"
 
-#can also use tripe double quotes
+
+#can also use triple  quotes
+#are used to create multi-line strings or strings that can include quotes easily.
 name3='''Bob'''
 print(name,name2,name3)
 
@@ -59,17 +61,17 @@ comment"""
 
 
 #------Arithmetic Operators
-# +,-,*,/,%
+# +,-,*,/,%,**
 # / always gives floating point value
 # a**b = a^b
 
 #------------------Relational Operators
 # !=,==,>=,<=,>,<
 
-#-----------------Assignment Opeartors
+#-----------------Assignment Operators
 # =,+=,-=,*=,/=,%=,**=
 
-#---------------Logical Opeartors
+#---------------Logical Operators
 #not, and ,or
 
 print(not True)
@@ -116,11 +118,11 @@ print("Street "+str(17))
 #
 # It tells Python:
 #
-# “This string contains variables inside it — replace them with their values.”
+# This string contains variables inside it — replace them with their values.
 #
-# 🧩 Without f (Normal String)
+#  Without f (Normal String)
 #
-# If you wrote:
+# If you write:
 #
 # print("{user_id} joined group {group_id}")
 #
@@ -137,7 +139,6 @@ print("Street "+str(17))
 # group_id = "Group1"
 #
 # print(f"{user_id} joined group {group_id}")
-#
 #
 # Output:
 #
