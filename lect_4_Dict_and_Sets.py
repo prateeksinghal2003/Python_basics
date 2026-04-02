@@ -2,7 +2,8 @@
 #-Dictionary---store comma separated key value pairs
 #keys cannot be list and dict
 #keys can be int,float
-#they are mutable
+#key's values are mutable
+#cannot change key name
 #they are unordered,order in which keys are inserted , on printing can come in different order
 
 dict={
@@ -65,7 +66,7 @@ print(student.get("name2"))
 # print(student["name2"])
 
 
-#-------------update()---add more key value pair that is adding new dictionary
+#-------------update()---add more key value pair
 #----if in update existing keys are used , value would get overwrite
 student.update({"city":"delhi"})
 print(student)
@@ -77,7 +78,7 @@ print(student)
 
 #they are unordered and all items are immutable
 #since elements are immutable , so cannot store list and dictionary, tuple can be added
-#but set is immutable , can add or remove elements
+#but set is mutable , can add or remove elements
 
 collections={1,2,34,4,4,4,4,4,4,"world"}
 print(collections)
@@ -100,8 +101,8 @@ print(collection)
 collection.remove(2)
 print(collection)
 
-# collection.clear()
-# print(collection)
+collection.clear()
+print(collection)
 
 collection.add(2)
 collection.add(3)
@@ -112,6 +113,9 @@ print(collection)
 
 
 #---pop() can  be random
+# Removes a random element
+# Returns that element
+
 print(collection.pop())
 print(collection.pop())
 print(collection.pop())
