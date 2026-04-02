@@ -3,6 +3,7 @@
 #can access a particular element from a list , and can modify it
 
 marks=[12,13,14,15,18.2,"karan"]
+
 print(marks)
 print(marks[2])
 print(len(marks))
@@ -39,6 +40,7 @@ fruits.remove("kiwi")
 print(fruits)
 
 fruits.pop(2)
+#if no index is passed , remove last item
 print(fruits)
 
 #----------------------------Tuples
@@ -61,9 +63,6 @@ print(type(tup2))
 
 #--if comma not used tup2 type would be assumed same as type of first value
 
-tup3=(12.44)
-print(type(tup3))
-
 
 #----tuple slicing
 
@@ -75,18 +74,70 @@ print(tup.index(12))
 #---count occurrences of element
 print(tup.count(12))
 
+
 #--------------------Palindrome
 list1=[1,2,1]
-list2=[2,3,4]
+
 
 cp_list1=list1.copy()
 cp_list1.reverse()
-cp_list2=list2.copy()
-cp_list2.reverse()
+
 
 if cp_list1==list1:
     print("palindrome")
 else:
     print("Not Palindrome")
 
-    
+
+
+""" What is a shallow copy?
+
+ It copies:
+
+ the outer list
+ NOT the inner objects (nested elements)
+ Example (important)
+list1 = [1, 2, [3, 4]]
+cp = list1.copy()
+
+cp[2][0] = 99
+
+print(list1)   # [1, 2, [99, 4]]
+print(cp)      # [1, 2, [99, 4]]
+
+ Why both changed?
+Because inner list [3,4] is shared
+
+ Simple understanding
+Shallow copy → references copied
+Deep copy → everything copied
+ Deep copy (for comparison)
+import copy
+
+cp = copy.deepcopy(list1)
+
+Now changes WON’T affect original
+
+ One-line answer (exam)
+
+list.copy() creates a shallow copy where only 
+the outer list is copied, but nested objects are shared.
+
+
+list1 = [1, 2, 3]
+cp_list1 = list1.copy()
+🔹 Why is it shallow?
+A new list object is created ✔
+But elements inside are just references copied 
+
+👉 In this case:
+
+Elements = 1, 2, 3 (integers)
+Integers are immutable → so no issue appears
+🔹 Important point
+
+👉 Since there are no nested (inner) objects,
+it looks like a deep copy — but actually it's still shallow
+
+list.copy() creates a shallow copy; in non-nested lists 
+it appears independent because elements are immutable."""
