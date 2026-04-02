@@ -39,10 +39,22 @@ for v in wrd:
 #----optional else with for loop,for doing task after loop
 #-----if break , comes else will not run , so else is used
 # when we want to run something after complete loop runs
+# else runs only if loop completes normally
+# else does NOT run if break happens
+
 for el in num:
     print(el)
 else:
     print("after loop")
+
+
+
+for n in num:
+    if n % 2 != 0:
+        print("Odd found")
+        break
+else:
+    print("All numbers are even")
 
 #--------range()---return sequence of numbers
 #range(start,end,step_size)
