@@ -9,13 +9,19 @@
 
 #---Creating Constructors
 
-#class Student:
+# class Student:
 
 
 
 
 #---self represents the object itself,always the first argument,compulsory to pass, self is just a name,
 #---can be anything
+# __init__ → runs automatically on object creation
+# A constructor that initializes object properties when an object is created.
+
+# self : refers to the current object
+# Used to store and access object data
+
 #     def __init__(self,name):
 #        print("Printing name")
 #        self.name=name
@@ -52,19 +58,19 @@
 
 
 #----Functions inside class are called methods
-class Student:
-    def __init__(self,name,age):
-       print("Printing name")
-       self.name=name
-       self.age=age
-
-     #--self must be passed, when calling this function ,may not need to pass object
-    def hello(self):
-        print("Hello",self.name)
-
-s1=Student("Karan",23)
-print(s1.name,s1.age)
-s1.hello()
+# class Student:
+#     def __init__(self,name,age):
+#        print("Printing name")
+#        self.name=name
+#        self.age=age
+#
+#      #--self must be passed in instance methods to refer to the current object.
+#     def hello(self):
+#         print("Hello",self.name)
+#
+# s1=Student("Karan",23)
+# print(s1.name,s1.age)
+# s1.hello()
 
 
 #---Static Methods--work at class level
@@ -73,10 +79,10 @@ s1.hello()
 #     def __init__(self,name):
 #        print("Printing name")
 #        self.name=name
-
-     #--@astaticmethod makes the method static , which is a decorator
-     #---decorator is  a function that takes function as input and return function as output
-     #---@staticmethod takes any function as input and makes it static
+#
+#      # @staticmethod makes the method static , which is a decorator
+#      # ---decorator is  a function that takes function as input and return function as output
+#      # ---@staticmethod takes any function as input and makes it static
 #     @staticmethod
 #     def hello():
 #         print("Hello")
@@ -84,6 +90,7 @@ s1.hello()
 # s1=Student("Karan")
 # print(s1.name)
 # s1.hello()
+# Student.hello()
 
 
 #------------------OOPS CONCEPTS-------
