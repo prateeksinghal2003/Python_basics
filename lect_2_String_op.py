@@ -19,6 +19,10 @@ print(len("Hello"))
 word="World"
 print(word[3])
 
+# cannot do like this
+# word[3]='L'
+# print(word)
+
 #---------------Slicing
 #string or string_variable_name[start_index:end_index] , end index not included
 
