@@ -5,8 +5,6 @@ def  cal_sum(a,b):
 print(cal_sum(1,2))
 
 #----Default parameters , when no value passed  to parameters, take default values
-
-
 def prod(a=1,b=2):
     return a*b
 
